@@ -15,13 +15,13 @@
 
     document.querySelectorAll(".btn-danger").forEach((button) => {
       button.addEventListener("click", function () {
-        if (window.location.pathname === "todo-list/index.html") {
+        if (window.location.pathname === "/todo-list/index.html") {
           storage = "todoArr";
         }
-        if (window.location.pathname === "todo-list/mom.html") {
+        if (window.location.pathname === "/todo-list/mom.html") {
           storage = "momTodoArr";
         }
-        if (window.location.pathname === "todo-list/dad.html") {
+        if (window.location.pathname === "/todo-list/dad.html") {
           storage = "dadTodoArr";
         }
         let currentArr = JSON.parse(localStorage.getItem(storage));
@@ -151,13 +151,13 @@
 
     container.append(todoAppTitle);
     container.append(todoItemForm.form);
-    if (window.location.pathname === "todo-list/index.html") {
+    if (window.location.pathname === "/todo-list/index.html") {
       container.append(todoList);
     }
-    if (window.location.pathname === "todo-list/mom.html") {
+    if (window.location.pathname === "/todo-list/mom.html") {
       container.append(momTodoList);
     }
-    if (window.location.pathname === "todo-list/dad.html") {
+    if (window.location.pathname === "/todo-list/dad.html") {
       container.append(dadTodoList);
     }
 
@@ -171,13 +171,13 @@
         return;
       }
 
-      if (window.location.pathname === "todo-list/index.html") {
+      if (window.location.pathname === "/todo-list/index.html") {
         arr = todoArr;
         arrName = "todoArr";
         list = todoList;
         storage = arrName;
       }
-      if (window.location.pathname === "todo-list/mom.html") {
+      if (window.location.pathname === "/todo-list/mom.html") {
         arr = momTodoArr;
         arrName = "momTodoArr";
         list = momTodoList;
